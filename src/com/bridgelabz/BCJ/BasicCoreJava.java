@@ -3,15 +3,20 @@ import java.util.*;
 public class BasicCoreJava {
 	
 	public static void main(String[] args) {
-		float harmonic_result=1;
-		int N,i;
+		int a,b,c;
 		Scanner sc = new Scanner(System.in);
-		System.out.println(" Enter the value of N :- ");
-    	N = sc.nextInt();
-    	for(i=2;i<=N;i++) {
-    		harmonic_result = harmonic_result + (float)1 / i;		
-    	}
-    	System.out.println("The Harmonic value is " + harmonic_result);
+		System.out.println(" Enter the value of a :- ");
+		a = sc.nextInt();
+		System.out.println(" Enter the value of b :- ");
+		b = sc.nextInt();
+		System.out.println("The number before swapping "+ a +b);
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("The number before swapping "+ a +b);
+				
+		
+    	
 	    		
 	}
 
