@@ -3,22 +3,15 @@ import java.util.*;
 public class BasicCoreJava {
 	
 	public static void main(String[] args) {
+		float harmonic_result=1;
 		int N,i;
-	    System.out.println("Enter Power :- ");
-	    Scanner sc = new Scanner(System.in);
-	    N = sc.nextInt();
-	    double x[] = new double[31];
-	    if(N>=0 && N<=31) {
-	    	for(i=0;i<N;i++) {
-	    		x[i] = Math.pow(2, i);
-	    	}
-	    	for(i=0;i<=N;i++) {
-	    		System.out.println(x[i]);
-	    	}
-	    }
-	    else {
-	    	System.out.println("Overflowed");
-	    }
+		Scanner sc = new Scanner(System.in);
+		System.out.println(" Enter the value of N :- ");
+    	N = sc.nextInt();
+    	for(i=2;i<=N;i++) {
+    		harmonic_result = harmonic_result + (float)1 / i;		
+    	}
+    	System.out.println("The Harmonic value is " + harmonic_result);
 	    		
 	}
 
