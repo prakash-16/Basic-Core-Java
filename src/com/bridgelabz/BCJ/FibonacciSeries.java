@@ -17,7 +17,7 @@ public class FibonacciSeries {
 			sum = fib_series[i-1] + fib_series[i-2];
 			fib_series[i] = sum; 
 		}
-		System.out.println("the fibonacci series is :- ");
+		System.out.println("The fibonacci series is :- ");
 		for(i=0;i<N;i++) {
 			System.out.println(fib_series[i]);
 		}
